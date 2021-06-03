@@ -1,2 +1,4 @@
 fastapi
 uvicorn
+asyncpg==0.22.0
+tortoise-orm==0.17.3
