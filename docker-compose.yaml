@@ -5,7 +5,7 @@ services:
         build: ./tdd_fastapi
         command: uvicorn app.main:app --reload --workers 1 --host 0.0.0.0 --port 8000
         volumes:
-            - ./tdd_fastapi:/usr/src/app
+            - ./tdd_fastapi/:/usr/src/app
         ports:
             - 8004:8000
         environment:
